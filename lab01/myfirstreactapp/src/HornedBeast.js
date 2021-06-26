@@ -18,6 +18,14 @@ export class HornedBeast extends Component {
             }
         )
     }
+    viewPicData=()=>{
+        let data = {
+            title: this.props.title,
+            img_url: this.props.pic,
+            description: this.props.description
+        };
+        this.props.modal(data);
+    }
     render() {
            
         return (
@@ -30,7 +38,8 @@ export class HornedBeast extends Component {
                         {this.props.description}
                     😸Number of Pats: {this.state.numberofclicks}
                     </Card.Text>
-                    <Button onClick={this.increaseNumber} variant="primary">pick</Button>
+                    <Button  style={{ width: "50%", marginTop: "2vh", marginBottom:'2vh', marginLeft: "10vh" }} onClick={this.increaseNumber} variant="primary">pick</Button>
+                    <Button  style={{ width: "50%", marginTop: "2vh", marginBottom:'2vh', marginLeft: "10vh" }} variant="danger" onClick={this.viewPicData}> Zoom </Button>
                 </Card.Body>
             </Card>
             </Col>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import HornedBeast from './HornedBeast';
-import hornsdata from './hornsdata.json'
+
 import {Row} from 'react-bootstrap'
  class Main extends Component {
     render() {
@@ -8,11 +8,14 @@ import {Row} from 'react-bootstrap'
         return (
             <Row>
           {
-              hornsdata.map((item , i)=>{
+              this.props.data.map((item , i)=>{
                   return(
                       <HornedBeast title={item.title}
                        pic={item.image_url}
-                       description={item.description} />
+                       description={item.description}
+                       modal={this.props.selectModal}
+                        />
+                      
                   )
               })
           }
