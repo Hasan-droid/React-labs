@@ -21,7 +21,7 @@ export class HornedBeast extends Component {
     render() {
            
         return (
-            <Card style={{ width: '18rem' }}>
+            <Card className="justify-content-center" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={this.props.pic} />
                 <Card.Body>
                     <Card.Title>{this.props.title}</Card.Title>
