@@ -28,3 +28,13 @@ Finish time: 3:00am
 
 Actual time needed to complete: 12
 -----------------------------------------------------------------
+Number and name of feature: drop down menu
+
+Estimate of time needed to complete: 5
+
+Start time: 3:00PM
+
+Finish time: 2:00am
+
+Actual time needed to complete: 11
+-----------------------------------------------------------------
